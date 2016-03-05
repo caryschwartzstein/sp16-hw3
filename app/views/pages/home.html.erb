@@ -1,0 +1,19 @@
+<H1>All Models</H1>
+
+<h2>Cats</h2>
+<% @cats.each do |c| %> <!-- Iterates through each user under the variable u -->
+  Name: <p> <%= c.name %> </p> <!-- Show the users name-->
+<% end %>
+
+<h2>Users</h2>
+<% @users.each do |u| %> <!-- Iterates through each user under the variable u -->
+  Username: <p> <%= u.username %> </p> <!-- Show the users name-->
+  Email: <p> <%= u.email %> </p> <!-- Show the users name-->
+  Age: <p> <%= u.age %> </p> <!-- Show the users name-->
+<% end %>
+
+<h2>Todos</h2>
+<% @todos.each do |t| %> <!-- Iterates through each user under the variable u -->
+  Tasks: <p> <%= t.tasks %> </p> <!-- Show the users name-->
+  Finished: <p> <%= t.finished %> </p> <!-- Show the users name-->
+<% end %>
